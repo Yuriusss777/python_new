@@ -5,5 +5,4 @@ m = 9
 
 for i in range(2, n + 1):
     for j in range(2, m + 1):
-        sum_1 = 0
         print(f"{i} * {j} = {i * j}")
