@@ -66,11 +66,12 @@ for i in my_list_new:
     repetitions[i] = counter
     sorted_values = sorted(repetitions.values())[:: -1]
 
-for i in sorted_values:
+for i in sorted_values[:10]:
     for k in repetitions.keys():
         if repetitions[k] == i:
             new_repetitions[k] = repetitions[k]
 
+print(repetitions)
 print(new_repetitions)
 
-print(sorted(new_repetitions.items(), key=lambda pair: pair[1], reverse=True)[:10])
+
